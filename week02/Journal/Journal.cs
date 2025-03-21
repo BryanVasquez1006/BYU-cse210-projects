@@ -17,15 +17,18 @@ public class Journal
     } 
 
 
+
+
 // Saving all the entries from the user to a file
     public void SaveToFile()
     {
         Console.WriteLine("Enter the filename to save your journal: ");
-        string filename = "./Journal.txt";
+        string filename = "journal.txt";
         using (StreamWriter outputFile = new StreamWriter(filename, true))
         {
           foreach (Entry entry in entries)
           {
+            
               outputFile.WriteLine($"{entry._date}|{entry._promptText}|{entry._entryText}");
           }
 
