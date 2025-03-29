@@ -14,14 +14,17 @@ public class Scripture
         _reference = reference;
         _words = new List<Word>();
 
-        //Creating the list of words on the scripture and separating the words on each space within words that is found
+        //Creating the list of words on the scripture and
+        //  separating the words on each space within words
+        //  that is found
         string[] listOfWords = scriptureText.Split(' ');
 
         foreach (string wordText in listOfWords)
         {
             Word word = new Word(wordText);
             
-            //Adding the scripture words as objects in the Words class
+            //Adding the scripture words as 
+            // objects in the Words class
 
             _words.Add(word);
         }
