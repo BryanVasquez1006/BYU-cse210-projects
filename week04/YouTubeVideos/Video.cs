@@ -26,6 +26,8 @@ class Video
         foreach (Comment comment in _videoComments)
         {
             Console.WriteLine(comment.GetComment());
+            _videoComments.Add(comment);
+        
         }
 
 
