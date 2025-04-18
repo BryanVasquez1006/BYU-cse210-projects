@@ -1,0 +1,4 @@
+110
+SimpleGoal,Go to climb a mountain,at zaragoza,100,True
+EternalGoal,pray every night,in my home,10
+ChecklistGoal,call JAS,from my ward,10,1,3,100
