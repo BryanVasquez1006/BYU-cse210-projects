@@ -22,6 +22,12 @@ public class CyclingActivity : Activity
         return distance;
     }
 
+    public override double GetPace()
+    {
+        double pace = 60 / _speed;
+        return pace;
+    }
+
 
 
 

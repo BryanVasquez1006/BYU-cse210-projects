@@ -37,13 +37,7 @@ abstract public class Activity
         Console.WriteLine(activityInfo);
     }
 
-        public  virtual double GetPace()
-    {
-        double speed = GetSpeed();
-        double pace = 60 / speed;
-
-        return pace;
-    }
+    public  abstract double GetPace();
 
     public abstract  double GetSpeed();
     public abstract double GetDistance();

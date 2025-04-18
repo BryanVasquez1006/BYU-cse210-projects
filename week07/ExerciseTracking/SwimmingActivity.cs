@@ -23,5 +23,13 @@ class SwimmingActivity : Activity
         return distance;
     }
 
+    public override double GetPace()
+    {
+        double distance = GetDistance();
+        double minutes = GetActivityLength();
+
+        return minutes / distance;
+    }
+
 
 }

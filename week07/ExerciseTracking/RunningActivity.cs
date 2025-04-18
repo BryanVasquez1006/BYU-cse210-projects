@@ -20,4 +20,10 @@ public class RunningActivity : Activity
     {
         return _distance;
     }
+
+    public override double GetPace()
+    {
+        double pace = GetActivityLength() / _distance;
+        return pace;
+    }
 }
